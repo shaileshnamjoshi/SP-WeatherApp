@@ -62,6 +62,7 @@ public class CurrentWeatherResponse: WeatherAPIResponseParser,ResponseValidatorP
         return wind["speed"] as! Float
     }
     
+    
     public func getDate() -> Date {
         return Date(timeIntervalSince1970: self.rawData["dt"] as! TimeInterval)
     }
